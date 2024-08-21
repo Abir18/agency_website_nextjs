@@ -1,6 +1,7 @@
+import Footer from "@/components/Footer/Footer";
+import ResponsiveNav from "@/components/Navigation/ResponsiveNav";
 import type {Metadata} from "next";
 import {Poppins} from "next/font/google";
-import ResponsiveNav from "./components/Navigation/ResponsiveNav";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <ResponsiveNav />
         {children}
+        <Footer />
       </body>
     </html>
   );
